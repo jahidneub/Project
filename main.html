@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahid Hasan Khan</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Jahid Hasan Khan</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#experience" class="navbar-link">Experience</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="cover">
+        <img src="images/cover.png" alt="cover pic" width="100%">
+    </div>
+
+    <section>
+        <div class="first-part">
+            <h1>Welcome To</h1>
+            <h1><span class="orange">My Website</span> Website</h1>
+            <h3>World-class professional Web Developer</h3>
+            <p>I am Jahid Hasan Khan. I am a junior Web Developer. Aspiring a Computer Science and Engineering student. With a passion for solving complex problems. I like programming. Logics is the main thing of programming.</p>
+            <a class="button" href="https://drive.google.com/file/d/1K6ofQyHsE1DoUn9BZwc-BiWZY5quYRlC/view?usp=drive_link" target="_blank">MY CV</a>
+        </div>
+        <div class="first-part">
+            <img src="images/profile.png" alt="profile">
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div id="full-stack" class="second-part">
+            <h2>Full Stack Web Dev</h2>
+            <h3 class="orange">2024 Present | Pro level Web Dev</h3>
+            <p>I am the master of HTML, CSS. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with the most popular Javascript framework called Vue JS. I even know the deployment, server, and security. I will give you 100% web solution.</p>
+        </div>
+        <div id="baby" class="second-part">
+            <h2>Baby Web Developer</h2>
+            <h3 class="orange">2022-2023 | Programming Hero learner</h3>
+            <p>They didn't offer me a job, but I made myself a remote web Developer. I made their website and showed it to them. They liked it and uploaded the content. It was fun working at Programming Hero.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello, I'm Jahid Hasan Khan, a passionate junior web developer with a strong interest in Computer Science and Engineering. I love tackling complex problems and believe that logic is the core of programming. My goal is to create efficient and user-friendly web solutions.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: jhkneub@gmail.com</p>
+        <p>Or connect with me on <a href="https://www.linkedin.com/in/jahidneub/?msgControlName=view_message_button&msgConversationId=2-YWI0YmQwYjgtNGY4Ny00YWRkLWI2MjUtMjAyYmY0NWUwZTZjXzAxMA%3D%3D&msgOverlay=true" target="_blank">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+        <p>Copyright Jahid Hasan Khan 2024, all rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.navbar-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navbarMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
